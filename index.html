@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonenumber Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/477be79e6e.js" crossorigin="anonymous"></script>
+    <script src="node.js" defer /></script>
+</head>
+<body>
+    <div id="mainframe">
+        <div id="appBanner"></div>
+        <div id="appController">
+            <div id="phonenumberInputFrame">
+                <input type="text" id="countryCode" placeholder="+00">
+                <input type="number" id="phonenumber" placeholder="Enter phone number">
+            </div>
+            <button type="submit" id="search" onclick="find()">SEARCH</button>
+        </div>
+        <div id="detailsScreen">
+            <div class="entryFrame">
+                <i class="fa-solid fa-sim-card icons" id="opertaor"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+            <div class="entryFrame">
+                <i class="fa-solid fa-earth-americas icons" id="countryName"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+            <div class="entryFrame">
+                <i class="fa-solid fa-clock icons" id="timeZone"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+            <div class="entryFrame">
+                <i class="fa-solid fa-clock icons" style="transform: rotateY(180deg);" id="phoneTime"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+            <div class="entryFrame">
+                <i class="fa-solid fa-location-dot icons" id="longitude"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+            <div class="entryFrame">
+                <i class="fa-solid fa-location-dot icons" id="latitude"></i>
+                <input type="text" class="inputs" readonly placeholder="Will be shown up post to search">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <i class="fa-solid fa-sim-card"></i> -->
